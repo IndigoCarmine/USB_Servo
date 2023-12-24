@@ -1,0 +1,6 @@
+../Core/Src/wrapper.cpp:109:122:void __tcf_0()	8	static
+../Core/Src/wrapper.cpp:112:157:void __tcf_1()	8	static
+../Core/Src/wrapper.cpp:94:10:void usb_interface::receive(std::vector<unsigned char>)	96	static
+../Core/Src/wrapper.cpp:156:10:void usb_interface::on_received()	8	static
+../Core/Src/wrapper.cpp:165:10:void main_interface::main_cpp()	24	static
+../Core/Src/wrapper.cpp:178:1:cpp)	24	static
