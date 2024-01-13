@@ -1,0 +1,5 @@
+This program is a firmware that works on the STM32F103C8T8. It is intended for the ServoDriver board I designed, and can be used by loading it with CubeIDE.
+
+USB communication is using COBS.
+
+It will be helpful for those who want to develop USBSerial.
