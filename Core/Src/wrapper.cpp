@@ -105,6 +105,7 @@ namespace usb_interface
         0x02: start or stop motor
         */
 
+
         //connection establish request
         static const std::vector<uint8_t> HelloUSBServo{(uint8_t)0x10,'H','e','l','l','o','U','S','B','S','e','r','v','o'};
         if(buf.size() == HelloUSBServo.size() && std::equal(buf.begin(),buf.end(),HelloUSBServo.begin()))
@@ -134,6 +135,7 @@ namespace usb_interface
                 const uint8_t active_motor = buf[1];
                 for(int i=0;i<8;i++){
                     if(active_motor & (1<<i)){
+                    	device_abstraction::leds.at(1).on();
                         device_abstraction::servos.at(i).start();
                     }else{
                         device_abstraction::servos.at(i).stop();
@@ -162,7 +164,7 @@ namespace usb_interface
 namespace main_interface
 {
 
-    void main_cpp()
+    void main()
     {
         device_abstraction::leds.at(1).on();
 

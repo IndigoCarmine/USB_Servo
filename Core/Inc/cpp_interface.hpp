@@ -6,10 +6,11 @@
 namespace usb_interface
 {
     //it call when data received and its last byte is 0x00
-	__attribute__((weak)) void receive(const std::vector<uint8_t> buf);
+	void receive(const std::vector<uint8_t> buf);
+	//__attribute__((weak))
 
     //it call when nvic interrupt is triggered
-	__attribute__((weak)) void on_received();
+	void on_received();
 
 
     //cobs encoded send
@@ -18,5 +19,5 @@ namespace usb_interface
 
 namespace main_interface{
     //main function after init
-    __attribute__((weak)) void main();
+    void main();
 } // namespace main_interface

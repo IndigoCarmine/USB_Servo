@@ -19,6 +19,10 @@ extern "C" {
         const auto buf_vec = std::vector<uint8_t>(buf,buf+len);
     	usb_interface::receive(buf_vec);
     }
+
+    void usb_recived(){
+    	usb_interface::on_received();
+    }
     void main_cpp() {
     	main_interface::main();
     }

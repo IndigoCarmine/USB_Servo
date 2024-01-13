@@ -1,4 +1,5 @@
 ../Core/Src/c_cpp_bridge.cpp:18:10:void usb_receive(uint8_t*, uint32_t)	32	static
-../Core/Src/c_cpp_bridge.cpp:22:10:void main_cpp()	8	static
-../Core/Src/c_cpp_bridge.cpp:42:10:void usb_interface::cobs_encode(const uint8_t*, uint8_t*, int)	4	static
-../Core/Src/c_cpp_bridge.cpp:35:10:void usb_interface::send(std::vector<unsigned char>)	16	static
+../Core/Src/c_cpp_bridge.cpp:23:10:void usb_recived()	8	static
+../Core/Src/c_cpp_bridge.cpp:26:10:void main_cpp()	8	static
+../Core/Src/c_cpp_bridge.cpp:46:10:void usb_interface::cobs_encode(const uint8_t*, uint8_t*, int)	4	static
+../Core/Src/c_cpp_bridge.cpp:39:10:void usb_interface::send(std::vector<unsigned char>)	16	static
